@@ -1,1 +1,260 @@
-placeholder
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixeira Advocacia | Atuação Estratégica e Assessoria Empresarial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0B132B',
+                        'brand-blue': '#1C2541',
+                        'brand-gold': '#D4AF37',
+                        'brand-light': '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #1e293b; scroll-behavior: smooth; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Efeitos de Hover Modernos para os Cartões */
+        .card-service {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.15), 0 10px 10px -5px rgba(212, 175, 55, 0.05);
+            border-color: #D4AF37;
+        }
+        .icon-hover {
+            transition: transform 0.4s ease;
+        }
+        .card-service:hover .icon-hover {
+            transform: scale(1.15);
+        }
+        .arrow-hover {
+            transition: transform 0.3s ease;
+        }
+        .card-service:hover .arrow-hover {
+            transform: translateX(6px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- Navbar -->
+    <nav class="bg-brand-dark text-white p-4 sticky top-0 z-50 shadow-lg border-b border-brand-gold/20">
+        <div class="container mx-auto flex justify-between items-center">
+            
+            <!-- Logo Atualizado -->
+            <div class="flex items-center justify-center">
+                <a href="index.html">
+                    <img src="logo.png" alt="Teixeira Advocacia" class="h-10 md:h-14 object-contain rounded">
+                </a>
+            </div>
+
+            <div class="hidden md:flex space-x-6 text-sm tracking-wide items-center">
+                <a href="#atuacao" class="hover:text-brand-gold transition uppercase">Áreas de Atuação</a>
+                <a href="#perfil" class="hover:text-brand-gold transition uppercase">O Advogado</a>
+                <a href="#contato" class="hover:text-brand-gold transition uppercase">Contato</a>
+            </div>
+            
+            <a href="https://wa.me/5516996149778" target="_blank" class="bg-brand-gold text-brand-dark px-4 py-2 md:px-5 md:py-2 rounded font-bold hover:bg-yellow-500 transition-colors text-xs md:text-sm flex items-center shadow">
+                <i class="fab fa-whatsapp text-lg mr-2"></i> Fale Conosco
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-brand-dark text-white pt-20 pb-16 md:pt-24 md:pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="container mx-auto max-w-4xl relative z-10 flex flex-col items-center">
+            
+            <div class="inline-block px-4 py-1 rounded-full border border-brand-gold/50 bg-brand-gold/10 text-brand-gold text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
+                Ribeirão Preto e Região • Atendimento Nacional e Internacional
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif tracking-wide mb-6 leading-tight">
+                Advocacia Estratégica e <br><span class="gold-gradient">Assessoria Empresarial</span>
+            </h1>
+            
+            <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto leading-relaxed mb-10 px-2">
+                Aliamos o rigor do contencioso a uma assessoria preventiva focada na realidade do seu negócio. Segurança jurídica com soluções diretas, éticas e sem burocracia.
+            </p>
+
+            <a href="#atuacao" class="bg-transparent border-2 border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark px-8 py-3 rounded uppercase tracking-wider font-bold transition duration-300 text-sm">
+                Conheça nossas áreas
+            </a>
+        </div>
+    </header>
+
+    <!-- Áreas de Atuação (Links Diretos para o WhatsApp) -->
+    <section id="atuacao" class="py-16 md:py-20 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-4 uppercase tracking-wide">Áreas de <span class="gold-gradient">Atuação</span></h2>
+                <p class="text-gray-500 text-sm tracking-wide">Selecione a área desejada para atendimento imediato.</p>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- Assessoria Empresarial -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Assessoria%20Empresarial." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <i class="fas fa-building text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Assessoria Empresarial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Suporte prático para a rotina de negócios. Atuamos com compliance e gestão de riscos operacionais para garantir segurança nas decisões corporativas do dia a dia.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+                <!-- M&A -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20tenho%20interesse%20em%20consultoria%20sobre%20Fusões%20e%20Aquisições%20(M&A)." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <div class="absolute top-0 right-0 bg-brand-dark text-brand-gold text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Completo</div>
+                    <i class="fas fa-handshake text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Fusões e Aquisições (M&A)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Estruturação integral de compras, vendas, cisões e incorporações. Assessoria em todas as operações de M&A, do planejamento e due diligence até a execução, garantindo a viabilidade do negócio.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+                <!-- Direito Contratual -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20preciso%20de%20suporte%20em%20Direito%20Contratual." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <i class="fas fa-file-contract text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Direito Contratual</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Elaboração, revisão e rescisão de contratos civis e comerciais. Blindagem jurídica que protege os interesses da empresa sem engessar as negociações.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+                <!-- Família e Sucessões -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20preciso%20de%20atendimento%20em%20Direito%20de%20Família%20e%20Sucessões." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <i class="fas fa-users text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Família e Sucessões</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Atuação sensível e técnica em divórcios, pensão alimentícia, guarda e partilha de bens. Condução de inventários judiciais e extrajudiciais focados na celeridade.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+                <!-- Criminal -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20preciso%20de%20assessoria%20em%20Advocacia%20Criminal." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <i class="fas fa-gavel text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Advocacia Criminal</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Defesa técnica rigorosa em inquéritos policiais e ações penais. Acompanhamento estratégico para garantia dos direitos fundamentais em todas as fases processuais.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+                <!-- Extrajudicial e Curatela -->
+                <a href="https://wa.me/5516996149778?text=Olá,%20preciso%20de%20ajuda%20com%20Regularizações%20Extrajudiciais%20ou%20Curatela." target="_blank" class="card-service p-6 md:p-8 rounded-xl block group">
+                    <i class="fas fa-stamp text-4xl text-brand-dark mb-5 icon-hover"></i>
+                    <h3 class="font-serif font-bold text-brand-dark text-xl mb-3">Extrajudicial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">Desembaraço de documentações em cartórios, alinhamentos administrativos e suporte técnico especializado em processos de curatela e interdição.</p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold mt-auto pt-4 border-t border-gray-100">
+                        <span>Falar com advogado</span> <i class="fas fa-arrow-right ml-2 arrow-hover"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfil do Profissional -->
+    <section id="perfil" class="py-16 md:py-20 px-4 bg-white border-t border-gray-200">
+        <div class="container mx-auto max-w-5xl">
+            <div class="bg-gray-50 rounded-2xl p-6 md:p-12 shadow-md flex flex-col md:flex-row items-center gap-8 md:gap-10 border border-gray-100">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-brand-dark flex items-center justify-center border-4 border-brand-gold shadow-lg relative overflow-hidden">
+                        <i class="fas fa-user-tie text-5xl md:text-6xl text-brand-gold"></i>
+                    </div>
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl font-serif font-bold text-brand-dark mb-2">Pedro Teixeira</h2>
+                    <h3 class="text-brand-gold font-bold tracking-wider text-xs md:text-sm mb-6 uppercase">Advogado</h3>
+                    
+                    <p class="text-gray-700 mb-4 text-sm md:text-base leading-relaxed text-justify">
+                        Bacharel em Direito pela FADITU, com pesquisa voltada ao Direito Constitucional. Atua com foco na resolução pragmática de litígios e no planejamento preventivo para empresas e pessoas físicas.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-sm md:text-base leading-relaxed text-justify">
+                        Traz em sua trajetória a experiência adquirida no Ministério Público do Estado de São Paulo (MPSP) na elaboração de teses jurídicas. Conta com alcance global em suas demandas empresariais através de parceria estratégica com escritório de advocacia na China, viabilizando negócios internacionais com segurança.
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-3">
+                        <span class="bg-brand-dark text-white px-3 md:px-4 py-1.5 rounded-full text-[10px] md:text-xs font-medium tracking-wide shadow-sm">Formação FADITU</span>
+                        <span class="bg-brand-dark text-white px-3 md:px-4 py-1.5 rounded-full text-[10px] md:text-xs font-medium tracking-wide shadow-sm">Experiência MPSP</span>
+                        <span class="bg-brand-dark text-brand-gold px-3 md:px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-wide shadow-sm">Parceria Internacional (China)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-brand-dark text-white py-16 md:py-20 border-t border-brand-gold/30">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 md:mb-6 tracking-wide text-brand-gold">Consulte sua demanda jurídica.</h2>
+            <p class="text-gray-300 mb-8 md:mb-10 max-w-2xl mx-auto tracking-wide text-base md:text-lg px-4">Entre em contato para agendar uma reunião de alinhamento e estruturarmos a melhor estratégia para o seu caso ou negócio.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5516996149778" target="_blank" class="flex items-center justify-center space-x-3 bg-brand-gold hover:bg-yellow-500 text-brand-dark px-8 py-4 rounded font-bold text-sm md:text-base tracking-wider transition w-full md:w-auto shadow-lg">
+                    <i class="fab fa-whatsapp text-xl md:text-2xl"></i>
+                    <span>(16) 99614-9778</span>
+                </a>
+                
+                <!-- Email -->
+                <a href="mailto:pedroteixeiraworld@gmail.com" class="flex items-center justify-center space-x-3 bg-transparent hover:bg-white/10 text-brand-gold border border-brand-gold px-8 py-4 rounded font-bold text-sm md:text-base tracking-wider transition w-full md:w-auto">
+                    <i class="far fa-envelope text-lg md:text-xl"></i>
+                    <span>Contato por E-mail</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050914] text-gray-500 py-10">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left flex flex-col items-center md:items-start">
+                <div class="mb-3">
+                    <img src="logo.png" alt="Teixeira Advocacia" class="h-10 object-contain rounded opacity-70 hover:opacity-100 transition-opacity">
+                </div>
+                <p class="text-xs mt-1">Ribeirão Preto - SP e Região</p>
+            </div>
+            <div class="text-center md:text-right">
+                 <p class="text-[10px] md:text-xs mt-2 text-gray-600 tracking-wide">
+                    &copy; 2026 Pedro H.P. Teixeira. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
